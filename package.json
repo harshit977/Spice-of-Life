@@ -1,0 +1,11 @@
+{
+  "name": "spiceoflife",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "index.html"
+  },
+  "author": "Harshit Sharma & Rohit Asture",
+  "license": "MIT"
+}

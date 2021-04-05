@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Book Your Seat</title>
+	<link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
+</head>
+<body style="background-image: url(menu.jpg); background-size: unset;">
+
+
+    <nav class="navbar navbar-expand-lg px-4" style="background-color: khaki;">
+        <a class="navbar-brand" href="#"><img src="small_logo.png" height="50px" width="70px" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav">
+          <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+          <ul class="navbar-nav mx-auto text-capitalize">
+            <li class="nav-item active">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../menu/menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../about/aboutus.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="../Contact Us/contactus.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../seat registration/seatreg.html">Register Seat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../cart.html">Order Online</a>
+            </li>
+            <li>
+              <a class="cart" href="#"><img src="cart.png" height="50px" width="70px" alt=""></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    
+    
+<div class="wrapper">
+  <h2>Seat Reservation</h2>
+  <div id="error_message"></div>
+  <form id="myform" onsubmit="return validate();">
+    <div class="input_field">
+        <label>Name</label>
+        <input type="text" placeholder="Name" id="name">
+    </div>
+    <div class="input_field">
+        <label>Phone</label>
+        <input type="text" placeholder="Phone" id="phone">
+    </div>
+    <div class="input_field">
+        <label>Email </label>
+        <input type="text" placeholder="Email" id="email">
+    </div>
+    <div class="input_field">
+        <label>Number Of Guests  </label>
+        <input type="text" placeholder="Max Eight People Per Booking" id="guest">
+    </div>
+    <div class="input_field">
+        <label>Date </label>
+        <input type="date"  id="date">
+    </div>
+    <div class="input_field">
+        <label>Time</label>
+        <select id="time">
+        <option id="1">9:00am to 10:00am</option>
+        <option id="2">11:00am to 12:00pm</option>
+        <option id="2">01:00pm to 2:00pm</option>
+        <option id="2">03:00pm to 04:00pm</option>
+        <option id="2">06:00pm to 07:00pm</option>
+        </select>
+    </div>
+    <div class="input_field">
+        <textarea placeholder="Any Special Requests"></textarea>
+    </div>
+    <div class="btn">
+        <input type="submit">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
